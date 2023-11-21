@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input {
+  width: 70%;
+}
+
+h1, h2 {
+  margin: 1rem 0;
+}
