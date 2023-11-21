@@ -19,7 +19,9 @@ createApp({
         .then((resp) => {
           this.arrayMail.push(resp.data.response)
         })
+        this.inputNumber = "";
       }
+      
       
     },
   },

@@ -19,7 +19,7 @@
 
       <div class="input">
         <label for="gEmail">Scegli quante E-mail vuoi generare!!</label>
-        <input type="number" name="gEmail" id="gEmail">
+        <input type="number" name="gEmail" id="gEmail" v-model="inputNumber" @keyup.enter="genRndEmail">
         
         <button @click="genRndEmail">Genera</button>
       </div>
@@ -27,8 +27,8 @@
       
 
       <h2>Ecco a te le tue Email randomiche:</h2>
-      <ul>
-        <li></li>
+      <ul v-if="arrayMail.length == numberEmail">
+        <li v-for="email in arrayMail">{{ email }}</li>
       </ul>
     </div>
     
